@@ -9,7 +9,6 @@ apt update && apt upgrade -y
 # Install packages from apt
 apt install -y \
     nala \
-    chsh \
     fish \
     openssh \
     git \
