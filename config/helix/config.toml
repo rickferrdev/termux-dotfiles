@@ -1,0 +1,22 @@
+theme = "rose_pine_dawn"
+
+[editor]
+line-number = "absolute"
+
+mouse = true
+cursorline = true
+rulers = [90]
+clipboard-provider = "termux"
+
+[editor.file-picker]
+hidden = true
+
+[editor.indent-guides]
+render = false
+
+[keys.normal]
+C-s = ":w"
+C-x = ":q!"
+
+[keys.insert]
+C-space = "completion"

@@ -1,0 +1,12 @@
+[core]
+	editor = hx
+[init]
+	defaultbranch = master
+[user]
+	email = rickferr.dev@gmail.com
+	name = Henr. Ferr
+	signingKey = /data/data/com.termux/files/home/.ssh/id_rsa.pub
+[gpg]
+	format = ssh
+[commit]
+	gpgSign = true

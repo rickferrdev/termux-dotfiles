@@ -1,0 +1,39 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+# Exit immediately if a command exits with a non-zero status.
+set -e
+
+# Update and upgrade packages
+apt update && apt upgrade -y
+
+# Install packages from apt
+apt install -y \
+    nala \
+    chsh \
+    fish \
+    openssh \
+    git \
+    helix \
+    helix-grammars \
+    nodejs-lts \
+    lua-language-server \
+    stylua \
+    rust \
+    rust-docs \
+    rust-analyzer
+
+# Change default shell to fish
+chsh -s fish
+
+# Install global npm packages
+npm i -g \
+    bash-language-server \
+    vscode-langservers-extracted \
+    typescript \
+    typescript-language-server \
+    pyright
+
+# Configure fish shell
+fish -c "set -U fish_greeting"
+
+echo "Installation complete! Please restart your terminal."
